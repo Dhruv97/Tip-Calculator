@@ -12,6 +12,7 @@
 		FC8C853A1C1D1E0C00E63433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C85381C1D1E0C00E63433 /* Main.storyboard */; };
 		FC8C853C1C1D1E0C00E63433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8C853B1C1D1E0C00E63433 /* Assets.xcassets */; };
 		FC8C853F1C1D1E0C00E63433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8C853D1C1D1E0C00E63433 /* LaunchScreen.storyboard */; };
+		FC8C85471C1D2BF900E63433 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC8C85461C1D2BF900E63433 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FC8C853B1C1D1E0C00E63433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC8C853E1C1D1E0C00E63433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8C85401C1D1E0C00E63433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC8C85461C1D2BF900E63433 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		FC8C85331C1D1E0C00E63433 /* tipper */ = {
 			isa = PBXGroup;
 			children = (
+				FC8C85461C1D2BF900E63433 /* SettingsViewController.swift */,
 				FC8C85341C1D1E0C00E63433 /* AppDelegate.swift */,
 				FC8C85361C1D1E0C00E63433 /* ViewController.swift */,
 				FC8C85381C1D1E0C00E63433 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				FC8C85371C1D1E0C00E63433 /* ViewController.swift in Sources */,
 				FC8C85351C1D1E0C00E63433 /* AppDelegate.swift in Sources */,
+				FC8C85471C1D2BF900E63433 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +253,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = tipper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dhruv.tipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -260,7 +266,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = tipper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dhruv.tipper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +294,7 @@
 				FC8C85451C1D1E0C00E63433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
