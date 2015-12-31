@@ -28,6 +28,10 @@ class ViewController: UIViewController {
     
     @IBOutlet var fivePerson: UILabel!
     
+    @IBOutlet var numberOfPeople: UITextField!
+    
+    @IBOutlet var multiplePerson: UILabel!
+    
     //Put the variable here since u will be reusing them throughout this view
     var doubleValue: Double?
     let defaults = NSUserDefaults.standardUserDefaults()
@@ -64,11 +68,17 @@ class ViewController: UIViewController {
         //Just for safety check
         if doubleValue != nil {
             
-            
+       
 
-            let tip = billAmount * doubleValue! //doubleValue is forcefully unwrap since you are sure that it exist with that if statement
-            let total = billAmount + tip
+            let tip = billAmount * doubleValue! //doubleValue is forcefully unwrap 1since you are sure that it exist with that if statement
+            var total = billAmount + tip
+           
+            if(numberOfPeople.text != "") {
+            let number = Double(numberOfPeople.text!)!
             
+            
+            multiplePerson.text = String(format: "$%.2f", total/number)
+            }
             tipLabel.text = String(format: "$%.2f", tip)
             totalLabel.text = String(format: "$%.2f", total)
             onePerson.text = String(format: "$%.2f", total)
