@@ -5,7 +5,7 @@ Tip Buddy is a tip calculator application for iOS.
 
 Submitted by: Dhruv Upadhyay
 
-Time spent: **X** hours spent in total
+Time spent: 5-7 hours spent in total
 
 ## User Stories
 
